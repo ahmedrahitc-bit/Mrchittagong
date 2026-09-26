@@ -137,9 +137,11 @@ button {
   justify-content: center;
   border: none;
   border-radius: 24px;
-  padding: 14px 22px;
+  padding: 13px 19px;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
+  
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
@@ -551,6 +553,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
+ 
 }
 
 .price {
