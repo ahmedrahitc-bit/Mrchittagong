@@ -732,7 +732,7 @@ button {
   .product-grid,
   .testimonial-grid,
   .newsletter-box {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
   }
 
   .header-inner {
