@@ -725,6 +725,7 @@ button {
 }
 
 @media (max-width: 640px) {
+  .product-swatch,
   .hero-visual,
   .content-section,
   .section-label,
