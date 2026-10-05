@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr.Chittagong</title>
@@ -21,7 +22,7 @@
 
         <nav class="nav" aria-label="Main navigation">
           <a href="#categories">Categories</a>
-          <a href="#products">Deals</a>
+          <a href="#electronics-gadgets">Deals</a>
           <a href="#reviews">Reviews</a>
           <a href="#about">About</a>
         </nav>
@@ -33,6 +34,12 @@
         </div>
       </div>
     </header>
+
+<section class="hero-banner">
+    <img src="im/WhatsApp Image 2026-10-04 at 9.41.44 AM.jpeg" alt="Banner">
+</section>
+
+
 
     <!-- Hero section with call to action and category banner -->
     <main id="top">
@@ -100,39 +107,51 @@
           </div>
 
           <div class="category-grid">
-            <article class="category-card Electronics & Gadgets">
+            <a class="category-card electronics" href="#electronics-gadgets">
               <div class="category-icon">📱</div>
               <h3>Electronics & Gadgets</h3>
-              <p>Gourmet sweets and favorite treats</p>
-            </article>
+              <p>Everyday tech, gadgets, and electronics</p>
+            </a>
 
-            <article class="category-card electronics">
+            <a class="category-card candy" href="#food-candy">
               <div class="category-icon">🍬</div>
               <h3>Food & Candy</h3>
-              <p>Smart essentials and everyday tech</p>
-            </article>
+              <p>Sweet treats, snacks, and candy</p>
+            </a>
 
-            <article class="category-card toys">
-              <div class="category-icon">🧸</div>
-              <h3>Toys</h3>
-              <p>Fun picks for kids and collectors</p>
-            </article>
-
-            <article class="category-card kitchen">
+            <a class="category-card kitchen" href="#kitchen-home">
               <div class="category-icon">🍽️</div>
-              <h3>Kitchen Accessories</h3>
-              <p>Smart tools for easier cooking</p>
-            </article>
+              <h3>Kitchen & Home</h3>
+              <p>Useful tools and essentials for your home</p>
+            </a>
+
+            <a class="category-card toys" href="#beauty-personal-care">
+              <div class="category-icon">✨</div>
+              <h3>Beauty & Personal Care</h3>
+              <p>Personal care and everyday grooming essentials</p>
+            </a>
+
+            <a class="category-card electronics" href="#sports-outdoor">
+              <div class="category-icon">⚽</div>
+              <h3>Sports & Outdoor</h3>
+              <p>Gear for outdoor adventures and active days</p>
+            </a>
+
+            <a class="category-card toys" href="#toys-games">
+              <div class="category-icon">🧸</div>
+              <h3>Toys & Games</h3>
+              <p>Fun picks for kids, play, and collectors</p>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="products" class="content-section">
-        <div class="container">
+      <section id="electronics-gadgets" class="content-section">
+        <div class="container" id="products">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Electronics & Gadgets.</h2>
+              <h2>Electronics & Gadgets</h2>
             </div>
             <p class="section-copy">
               Best-selling finds selected for quality, value, and everyday convenience.
@@ -163,7 +182,7 @@
                 <img src="images/electronic 2.jpeg" alt="e2"  onclick="openImage(this.src)">
               </div>
               <div class="product-meta">
-                <span class="badge">Electronics</span>
+                <span class="badge">Electronics & Gadgets</span>
                 <span class="review">★★★★★</span>
               </div>
               <h3>Ceiling Fan</h3>
@@ -571,12 +590,12 @@
                      
       </section>
    <!--candy & food-->
-      <section id="products" class="content-section">
+      <section id="food-candy" class="content-section">
         <div class="container">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Food & Candy.</h2>
+              <h2>Food & Candy</h2>
             </div>
             <p class="section-copy">
               Tasty treats selected for quality, flavor, and everyday enjoyment.
@@ -830,7 +849,7 @@
                 <img src="image/candy 16.jpeg" alt="c15"  onclick="openImage(this.src)">
               </div>
               <div class="product-meta">
-                <span class="badge">Electronics & Gadgets</span>
+                <span class="badge">Food & Candy</span>
                 <span class="review">★★★★★</span>
               </div>
 
@@ -842,15 +861,17 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
 
           <!--------Kitchen & Home------->
          
-          <section id="products" class="content-section">
+          <section id="kitchen-home" class="content-section">
         <div class="container">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Kitchen & Home.</h2>
+              <h2>Kitchen & Home</h2>
             </div>
             <p class="section-copy">
               Smart essentials for a better home.
@@ -944,16 +965,18 @@
               </div>
             </article>
         </div>
+        </div>
+      </section>
 
         <!----Beauty & Personal Care---->
 
         
-          <section id="products" class="content-section">
+          <section id="beauty-personal-care" class="content-section">
         <div class="container">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Beauty & Personal Care.</h2>
+              <h2>Beauty & Personal Care</h2>
             </div>
             <p class="section-copy">
               Everyday essentials for your beauty and personal care..
@@ -1098,15 +1121,17 @@
               </div>
             </article>
             </div>
+        </div>
+      </section>
 
             <!---Sports & Outdoor-->
             
-          <section id="products" class="content-section">
+          <section id="sports-outdoor" class="content-section">
         <div class="container">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Sports & Outdoor.</h2>
+              <h2>Sports & Outdoor</h2>
             </div>
             <p class="section-copy">
               Essential gear for sports, fitness, and outdoor adventures..
@@ -1182,15 +1207,17 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
 
           <!---Toys & Games---->
           
-           <section id="products" class="content-section">
+           <section id="toys-games" class="content-section">
         <div class="container">
           <div class="section-head">
             <div>
               <span class="section-label">Top picks</span>
-              <h2>Toys & Games.</h2>
+              <h2>Toys & Games</h2>
             </div>
             <p class="section-copy">
               Discover exciting toys and games for endless fun.
@@ -1208,7 +1235,7 @@
               </div>
 
               <h3> Tesla Cybertruck toy</h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys.</p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1225,7 +1252,8 @@
               </div>
 
               <h3>Diecast Car Model Toy Toyota <h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Body:Plastic</p>
+
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1242,7 +1270,7 @@
               </div>
 
               <h3>Diecast Car Model Toy Toyota </h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Body:Plastic</p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1259,7 +1287,7 @@
               </div>
 
               <h3>Mercedes-Maybach diecast toy car</h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys.Body:metal </p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1276,7 +1304,7 @@
               </div>
 
               <h3>Mercedes-Maybach diecast toy car</h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!
+              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys.Body:metal
 </p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
@@ -1294,7 +1322,7 @@
               </div>
 
               <h3>Mercedes-Maybach diecast toy car</h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys.Body:metal</p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1311,7 +1339,7 @@
               </div>
 
               <h3>Mercedes-Maybach diecast toy car</h3>
-              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys. Perfect for kids to play, explore, and develop their creativity. Great choice for both everyday fun and gifting!</p>
+              <p class="product-meta">Make playtime more fun and exciting with our collection of colorful and engaging toys.</p>
               <div class="product-pricing">
                 <div class="price">0/= <small>  BDT</small></div>
                 <a  href="https://wa.me/8801847635437?text=Hello%20I%20want%20to%20order" class="btn btn-primary">Order Now</a>
@@ -1320,6 +1348,7 @@
 
             
         </div>
+      </section>
 
     <!----Customer Reviews----->
 
@@ -1388,8 +1417,11 @@
       
     </main>
                         
-                         <p  class="name">  <a href="https://www.facebook.com/share/1QTgw9EEPr/" target="_blank"> Founder & Business Owner</a></p>
-
+                         <p class="name">
+    <a href="https://www.facebook.com/share/1QTgw9EEPr/" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+</p>
 
                          <p class="name"><strong>Developed by</strong> <a href="https://www.facebook.com/profile.php?id=100063841189464" target="_blank">Ahmed Rahi</a></p>
 
