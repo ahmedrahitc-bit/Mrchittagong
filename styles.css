@@ -865,13 +865,13 @@ a.category-card:hover {
 
 .name {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   margin-top: 25px;
   letter-spacing: 0.5px;
   padding-bottom: 20px;
   padding-top: 20px;
- 
+
 }
 
 .name a {
@@ -880,10 +880,28 @@ a.category-card:hover {
   font-weight: 700;
   text-decoration: none;
   padding: 4px 10px;
-  border-radius: 6px;
+  border-radius: 10px;
   background: #f3f3f5;
   transition: 0.3s ease;
   text-decoration: underline;
+}
+
+.hand-indicator {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 6px;
+    vertical-align: middle;
+    animation: handMove 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes handMove {
+    from {
+        transform: translateX(5px);
+    }
+
+    to {
+        transform: translateX(-3px);
+    }
 }
 
 .name a:hover {
