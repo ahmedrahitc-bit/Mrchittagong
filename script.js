@@ -12,6 +12,37 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
+const filterButtons = document.querySelectorAll('.filter-chip');
+
+const getCardCategory = (card) => {
+  const badge = card.querySelector('.badge')?.textContent.trim().toLowerCase() || '';
+  if (badge.includes('electronics')) return 'electronics';
+  if (badge.includes('food') || badge.includes('candy')) return 'food';
+  if (badge.includes('kitchen')) return 'kitchen';
+  if (badge.includes('beauty')) return 'beauty';
+  if (badge.includes('sports')) return 'sports';
+  if (badge.includes('toys')) return 'toys';
+  return 'all';
+};
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+
+    filterButtons.forEach((chip) => {
+      const isActive = chip === button;
+      chip.classList.toggle('active', isActive);
+      chip.setAttribute('aria-pressed', String(isActive));
+    });
+
+    document.querySelectorAll('.product-card-item').forEach((card) => {
+      const category = getCardCategory(card);
+      const isVisible = filter === 'all' || category === filter;
+      card.hidden = !isVisible;
+    });
+  });
+});
+
 const quickViewModal = document.createElement('div');
 quickViewModal.className = 'quick-view-modal';
 quickViewModal.hidden = true;
@@ -141,13 +172,18 @@ document.addEventListener('keydown', (event) => {
 });
 
 function openImage(imageSrc) {
-  const modal = document.getElementById("imageModal");
-  const largeImage = document.getElementById("largeImage");
+  const modal = document.getElementById('imageModal');
+  const largeImage = document.getElementById('largeImage');
+
+  if (!modal || !largeImage) return;
 
   largeImage.src = imageSrc;
-  modal.style.display = "flex";
+  modal.style.display = 'flex';
 }
 
 function closeImage() {
-  document.getElementById("imageModal").style.display = "none";
+  const modal = document.getElementById('imageModal');
+  if (modal) {
+    modal.style.display = 'none';
+  }
 }
